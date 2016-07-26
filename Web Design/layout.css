@@ -1,0 +1,53 @@
+html, body {height:100%;}
+* {margin:0px;padding:0px;}
+body {background-image:url(images/bg_grass.jpg);}
+
+.header
+{
+	margin:2px 2px 2px 2px;
+	width:99%; height:10%;
+	
+	text-align:center;
+}
+.menu
+{
+	float:left;
+	margin:1px 2px 2px 10px;
+	text-align:left;
+	width:10%; height:85%;	
+}
+.content
+{
+	float:left;
+	margin:1px 2px 2px 2px;
+	width:88%; height:85%;
+	text-align:justify;
+}
+.footer
+{
+	margin:0px auto 2px auto;
+	width:99%; height:5%;
+	text-align:center;
+	clear:both;
+}
+.menu ul 
+{
+list-style-type:none; 
+margin:2px;
+padding:3px; 
+text-align:left;
+}
+.menu a {
+display:block; 
+width:100px;
+padding:3px;
+
+color:#000000; 
+text-decoration:none; 
+  }
+
+.menu ul li 
+{
+margin:5px; 
+}
+h3 {text-align:center;}

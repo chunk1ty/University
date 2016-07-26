@@ -1,0 +1,43 @@
+D:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\bin\Debug\Calculator.exe.config
+D:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\bin\Debug\Calculator.exe
+D:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\bin\Debug\Calculator.pdb
+D:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+D:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+D:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+D:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.exe
+D:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.pdb
+D:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.About.resources
+D:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.CalculatorForm.resources
+C:\chunk1ty\C#\c# trening\c# trening\Folder for testing programs\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\chunk1ty\C#\c# trening\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\chunk1ty\C#\c# trening\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\chunk1ty\C#\c# trening\c# trening\Folder for testing programs\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\chunk1ty\C#\c# trening\c# trening\Folder for testing programs\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\chunk1ty\C#\c# trening\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\chunk1ty\C#\c# trening\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.About.resources
+C:\chunk1ty\C#\c# trening\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.CalculatorForm.resources
+C:\chunk1ty\C#\c# trening\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\chunk1ty\C#\c# trening\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+C:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.exe
+C:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.pdb
+C:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\bin\Debug\Calculator.exe
+C:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\bin\Debug\Calculator.pdb
+C:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.About.resources
+C:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.CalculatorForm.resources
+C:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\chunk1ty\C#\c# trening\Folder for testing programs\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+D:\chunk1ty\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\bin\Debug\Calculator.exe.config
+D:\chunk1ty\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\obj\Debug\Calculator.exe
+D:\chunk1ty\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\obj\Debug\Calculator.pdb
+D:\chunk1ty\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\bin\Debug\Calculator.exe
+D:\chunk1ty\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\bin\Debug\Calculator.pdb
+D:\chunk1ty\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+D:\chunk1ty\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\obj\Debug\Calculator.About.resources
+D:\chunk1ty\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\obj\Debug\Calculator.CalculatorForm.resources
+D:\chunk1ty\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+D:\chunk1ty\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+D:\Chunk1tySVN\Telerik Academy\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\bin\Debug\Calculator.exe.config
+D:\Chunk1tySVN\Telerik Academy\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\obj\Debug\Calculator.exe
+D:\Chunk1tySVN\Telerik Academy\C#\RUCourseWorks\SI CourseWork\Calculator\Calculator\obj\Debug\Calculator.pdb

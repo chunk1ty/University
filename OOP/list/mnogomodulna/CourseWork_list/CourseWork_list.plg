@@ -1,0 +1,26 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CourseWork_list - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Andrian\AppData\Local\Temp\RSPFE5E.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/CourseWork_list.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\chunk1ty\Education\2 course\4 sem\my\OOP\kursovi\my\list\mnogomodulna\CourseWork_list\Music.cpp"
+]
+Creating command line "cl.exe @C:\Users\Andrian\AppData\Local\Temp\RSPFE5E.tmp" 
+<h3>Output Window</h3>
+Compiling...
+Skipping... (no relevant changes detected)
+Music.cpp
+
+
+
+<h3>Results</h3>
+Music.obj - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,175 @@
+EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
+ 
+EVEN_ARR.com -- emu8086 assembler version: 4.08  
+ 
+[ 2.12.2013 ã.  --  18:46:09 ] 
+ 
+===================================================================================================
+[LINE]     LOC: MACHINE CODE                          SOURCE
+===================================================================================================
+ 
+[   1]        :                                       		name	"EVEN_ARR"
+[   2]        :                                       		org		100h
+[   3]    0100: EB 55                                 		jmp		BEGIN
+[   4]        :                                       ;-------------------------------------
+[   5]        :                                       ; Define variable
+[   6]        :                                       ;-------------------------------------
+[   7]    0102: 42 45 47 5F 41 44 44 52 3A 20 24      msgBegAddr      DB	"BEG_ADDR:" , 20h, 24h
+[   8]    010D: 09 09 45 4E 44 5F 41 44 44 52 3A 20   msgEndAddr		DB	09h, 09h, "END_ADDR:" , 20h, 24h
+                24                                  
+[   9]    011A: 0D 0A 50 72 6F 67 72 61 6D 20 65 6E   msgFinish		DB	0dh, 0ah, "Program end." , 24h
+                64 2E 24                            
+[  10]    0129: 0D 0A 45 52 52 4F 52 20 2D 20 69 6E   msgError		DB	0dh, 0ah, "ERROR - invalid address!" , 24h
+                76 61 6C 69 64 20 61 64 64 72 65 73 
+                73 21 24                            
+[  11]        :                                       
+[  12]        :                                       ;example array
+[  13]    0144: 2C 20 0A EF 35 0C 37 0E 39 61 0D 63   array           DB		',', ' ', 0ah, 'ï', '5', 0ch, '7', 0eh, '9', 'a', 0dh, 'c', 'd', 0bh, 'f'
+                64 0B 66                            
+[  14]        :                                       
+[  15]    0153: 00 00                                 startAddr 		DW	?
+[  16]    0155: 00 00                                 endAddr			DW	?
+[  17]        :                                       
+[  18]        :                                       ;-------------------------------------
+[  19]        :                                       ;Main program code
+[  20]        :                                       ;-------------------------------------
+[  21]    0157:                                       BEGIN:
+[  22]        :                                       ;Init:
+[  23]        :                                       
+[  24]        :                                       ;Set video mode:
+[  25]    0157: B8 03 00                              		mov 	ax, 3     ; text mode 80x25, 16 colors, 8 pages (ah=0, al=3)
+[  26]    015A: CD 10                                 		int 	10h       ; do it!
+[  27]        :                                       
+[  28]        :                                       ;Show first text line:
+[  29]    015C: B8 02 01                              		lea 	ax,	msgBegAddr
+[  30]    015F: E8 2C 00                              		call	print
+[  31]        :                                       ;Read array begin address:
+[  32]    0162: B9 04 00                              		mov		cx,	4
+[  33]    0165: E8 54 00                              		call	read
+[  34]    0168: 89 1E 53 01                           		mov     startAddr, bx
+[  35]        :                                       		
+[  36]        :                                       ;Show next text line:
+[  37]    016C: B8 0D 01                              		lea 	ax,	msgEndAddr
+[  38]    016F: E8 1C 00                              		call	print
+[  39]        :                                       ;Read array end address:
+[  40]    0172: B9 04 00                              		mov		cx,	4
+[  41]    0175: E8 44 00                              		call	read
+[  42]    0178: 89 1E 55 01                           		mov     endAddr, bx
+[  43]        :                                       		
+[  44]        :                                       ;Call validate input param :
+[  45]    017C: E8 6C 00                              		call	valid
+[  46]        :                                       		
+[  47]        :                                       ;Convert array elemenst to even:
+[  48]    017F: E8 7F 00                              		call	conv
+[  49]        :                                       
+[  50]        :                                       ;Show finish message:
+[  51]    0182: B8 1A 01                              		lea		ax,	msgFinish
+[  52]    0185: E8 06 00                              		call	print
+[  53]        :                                       		
+[  54]        :                                       ;On end wait to press KEY
+[  55]    0188: B4 00                                 		mov		ah,	0
+[  56]    018A: CD 16                                 		int		16h
+[  57]    018C: CD 20                                 		int		20h
+[  58]        :                                       ;		ret
+[  59]        :                                       
+[  60]        :                                       ;-------------------------------------
+[  61]        :                                       ;Program functions
+[  62]        :                                       ;-------------------------------------
+[  63]        :                                       ;Show text:
+[  64]    018E: 8B D0                                 print:	mov		dx,ax
+[  65]    0190: B4 09                                 mov		ah,09h
+[  66]    0192: CD 21                                 int		21h
+[  67]    0194: C3                                    		ret
+[  68]        :                                       
+[  69]        :                                       ;Convert ASCII to HEX:
+[  70]    0195: 04 40                                 a2h: 	add		al,40h		
+[  71]    0197: 98                                    		cbw
+[  72]    0198: 80 E4 09                              		and		ah,09h
+[  73]    019B: 02 C4                                 		add		al,ah
+[  74]    019D: 24 0F                                 		and		al,0fh
+[  75]    019F: C3                                    		ret
+[  76]        :                                       
+[  77]        :                                       ;Check correct HEX symbol:
+[  78]    01A0: 3C 30                                 check:	cmp		al,30h;
+[  79]    01A2: 72 14                                 		jb		n
+[  80]    01A4: 3C 3A                                 		cmp		al,3ah
+[  81]    01A6: 72 12                                 		jb		y
+[  82]    01A8: 3C 41                                 		cmp		al,41h
+[  83]    01AA: 72 0C                                 		jb		n
+[  84]    01AC: 3C 47                                 		cmp		al,47h
+[  85]    01AE: 72 0A                                 		jb		y
+[  86]    01B0: 3C 61                                 		cmp		al,61h;
+[  87]    01B2: 72 04                                 		jb		n
+[  88]    01B4: 3C 67                                 		cmp		al,67h
+[  89]    01B6: 72 02                                 		jb		y
+[  90]    01B8: EB 01                                 n:		jmp     badHex
+[  91]    01BA: C3                                    y:		ret
+[  92]        :                                       
+[  93]        :                                       ;Read one kyeboard symbol:
+[  94]    01BB: 5B                                    badHex:	pop		bx
+[  95]    01BC: B4 00                                 read:	mov		ah,0
+[  96]    01BE: CD 16                                 		int		16h
+[  97]    01C0: E8 DD FF                              		call    check
+[  98]    01C3: 50                                    		push	ax
+[  99]    01C4: B4 0E                                 		mov		ah,0eh		
+[ 100]    01C6: CD 10                                 		int		10h
+[ 101]    01C8: E2 F2                                 		loop	read
+[ 102]        :                                       ;Packed four readed ASCCI numbers:
+[ 103]    01CA: 58                                    		pop		ax
+[ 104]    01CB: E8 C7 FF                              		call 	a2h
+[ 105]    01CE: 8A D8                                 		mov 	bl,al
+[ 106]    01D0: 58                                    		pop		ax
+[ 107]    01D1: E8 C1 FF                              		call	a2h
+[ 108]    01D4: B1 04                                 		mov		cl,4
+[ 109]    01D6: D2 E0                                 		shl		al,cl
+[ 110]    01D8: 0A D8                                 		or		bl,al
+[ 111]    01DA: 58                                    		pop		ax
+[ 112]    01DB: E8 B7 FF                              		call 	a2h
+[ 113]    01DE: 8A F8                                 		mov		bh,al
+[ 114]    01E0: 58                                    		pop		ax
+[ 115]    01E1: E8 B1 FF                              		call 	a2h
+[ 116]    01E4: B1 04                                 		mov 	cl,4
+[ 117]    01E6: D2 E0                                 		shl		al,cl
+[ 118]    01E8: 0A F8                                 		or		bh,al
+[ 119]    01EA: C3                                    		ret
+[ 120]        :                                       
+[ 121]        :                                       ;Validate input param. :
+[ 122]    01EB: A1 55 01                              valid:	mov		ax,	endAddr
+[ 123]    01EE: 3B 06 53 01                           		cmp		ax,	startAddr
+[ 124]    01F2: 77 0C                                 		ja		pass
+[ 125]        :                                       ;Show bad input param. :
+[ 126]    01F4: B8 29 01                              		lea 	ax,	msgError
+[ 127]    01F7: E8 94 FF                              		call	print
+[ 128]    01FA: B4 00                                 		mov		ah,	0
+[ 129]    01FC: CD 16                                 		int		16h
+[ 130]    01FE: CD 20                                 		int		20h
+[ 131]    0200: C3                                    pass:	ret
+[ 132]        :                                       
+[ 133]        :                                       ;Convert array:
+[ 134]    0201: 8B 0E 55 01                           conv:	mov     cx, endAddr
+[ 135]    0205: 2B 0E 53 01                           sub     cx, startAddr
+[ 136]    0209: 41                                    inc     cx
+[ 137]    020A: 8B 36 53 01                           mov     si, startAddr
+[ 138]    020E: 83 E3 00                              		and		bx,	0
+[ 139]    0211: AC                                    lp:		lodsb
+[ 140]        :                                       ;Check for even number:
+[ 141]    0212: 0C 00                                 		or  	al,	0
+[ 142]    0214: 7A 0D                                 		jpe		even
+[ 143]    0216: A8 80                                 test    al, 10000000b
+[ 144]    0218: 74 04                                 jz      zf
+[ 145]    021A: 24 7F                                 and     al, 01111111b
+[ 146]    021C: EB 02                                 jmp     store
+[ 147]    021E: 0C 80                                 zf:     or      al, 10000000b
+[ 148]    0220: 88 44 FF                              store:  mov     [si]-1, al
+[ 149]    0223: E2 EC                                 even:	loop	lp
+[ 150]    0225: C3                                    		ret		
+[ 151]        :                                       		
+[ 152]        :                                       
+ 
+===================================================================================================
+ 
+
+
+
+
+===================================================================================================

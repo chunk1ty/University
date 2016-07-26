@@ -1,0 +1,6 @@
+C:\Users\Krastev_PC\Desktop\Ankk\MissionaryProblem\MissionaryProblem\bin\Debug\MissionaryProblem.exe.config
+C:\Users\Krastev_PC\Desktop\Ankk\MissionaryProblem\MissionaryProblem\bin\Debug\MissionaryProblem.exe
+C:\Users\Krastev_PC\Desktop\Ankk\MissionaryProblem\MissionaryProblem\bin\Debug\MissionaryProblem.pdb
+C:\Users\Krastev_PC\Desktop\Ankk\MissionaryProblem\MissionaryProblem\obj\Debug\MissionaryProblem.csprojResolveAssemblyReference.cache
+C:\Users\Krastev_PC\Desktop\Ankk\MissionaryProblem\MissionaryProblem\obj\Debug\MissionaryProblem.exe
+C:\Users\Krastev_PC\Desktop\Ankk\MissionaryProblem\MissionaryProblem\obj\Debug\MissionaryProblem.pdb

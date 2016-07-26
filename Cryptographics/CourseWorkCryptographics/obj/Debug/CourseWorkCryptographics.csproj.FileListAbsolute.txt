@@ -1,0 +1,12 @@
+C:\Users\Andriyan\Desktop\CourseWorkCryptographics\CourseWorkCryptographics\bin\Debug\CourseWorkCryptographics.exe.config
+C:\Users\Andriyan\Desktop\CourseWorkCryptographics\CourseWorkCryptographics\obj\Debug\CourseWorkCryptographics.csprojResolveAssemblyReference.cache
+C:\Users\Andriyan\Desktop\CourseWorkCryptographics\CourseWorkCryptographics\bin\Debug\CourseWorkCryptographics.exe
+C:\Users\Andriyan\Desktop\CourseWorkCryptographics\CourseWorkCryptographics\bin\Debug\CourseWorkCryptographics.pdb
+C:\Users\Andriyan\Desktop\CourseWorkCryptographics\CourseWorkCryptographics\obj\Debug\CourseWorkCryptographics.exe
+C:\Users\Andriyan\Desktop\CourseWorkCryptographics\CourseWorkCryptographics\obj\Debug\CourseWorkCryptographics.pdb
+D:\chunk1ty\C#\RU\CourseWorkCryptographics\CourseWorkCryptographics\bin\Debug\CourseWorkCryptographics.exe.config
+D:\chunk1ty\C#\RU\CourseWorkCryptographics\CourseWorkCryptographics\obj\Debug\CourseWorkCryptographics.exe
+D:\chunk1ty\C#\RU\CourseWorkCryptographics\CourseWorkCryptographics\obj\Debug\CourseWorkCryptographics.pdb
+D:\Chunk1tySVN\Telerik Academy\C#\RUCourseWorks\CourseWorkCryptographics\CourseWorkCryptographics\bin\Debug\CourseWorkCryptographics.exe.config
+D:\Chunk1tySVN\Telerik Academy\C#\RUCourseWorks\CourseWorkCryptographics\CourseWorkCryptographics\obj\Debug\CourseWorkCryptographics.exe
+D:\Chunk1tySVN\Telerik Academy\C#\RUCourseWorks\CourseWorkCryptographics\CourseWorkCryptographics\obj\Debug\CourseWorkCryptographics.pdb
