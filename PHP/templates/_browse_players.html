@@ -1,0 +1,20 @@
+
+<center>
+<p><b>Players</b></p>
+
+<p><font color="red"><?php print $msg; ?></font></p>
+
+<table width="520">
+<form action="index.php" method="get">
+<input type="hidden" name="cmd" value="plr_browse">
+<tr>
+	<td colspan="5">Search: <input type="text" name="search" value="<?php print $search; ?>"> <input type="submit" value="Search"></td>
+</tr>
+</form>
+<tr bgcolor="#BBBBBB">
+	<td colspan="2"><b>Players: <?php print $numberOfPlayers; ?></b></td>
+</tr>
+<?php print $player; ?>
+</table>
+
+</center>

@@ -1,0 +1,18 @@
+C:\Users\Andriyan\Desktop\Compiler\Compiler\bin\Debug\Compiler.exe.config
+C:\Users\Andriyan\Desktop\Compiler\Compiler\bin\Debug\Compiler.exe
+C:\Users\Andriyan\Desktop\Compiler\Compiler\bin\Debug\Compiler.pdb
+C:\Users\Andriyan\Desktop\Compiler\Compiler\obj\Debug\Compiler.csprojResolveAssemblyReference.cache
+C:\Users\Andriyan\Desktop\Compiler\Compiler\obj\Debug\Compiler.exe
+C:\Users\Andriyan\Desktop\Compiler\Compiler\obj\Debug\Compiler.pdb
+C:\Users\Andriyan\Desktop\Compiler10.11.14\Compiler\Compiler\bin\Debug\Compiler.exe.config
+C:\Users\Andriyan\Desktop\Compiler10.11.14\Compiler\Compiler\obj\Debug\Compiler.exe
+C:\Users\Andriyan\Desktop\Compiler10.11.14\Compiler\Compiler\obj\Debug\Compiler.pdb
+C:\Users\Andriyan\Desktop\Compiler10.11.14\Compiler\Compiler\bin\Debug\Compiler.exe
+C:\Users\Andriyan\Desktop\Compiler10.11.14\Compiler\Compiler\bin\Debug\Compiler.pdb
+C:\Users\Andriyan\Desktop\Compiler10.11.14\Compiler\Compiler\obj\Debug\Compiler.csprojResolveAssemblyReference.cache
+C:\Users\Andriyan\Desktop\Compiler FINAL\Compiler\Compiler\bin\Debug\Compiler.exe.config
+C:\Users\Andriyan\Desktop\Compiler FINAL\Compiler\Compiler\obj\Debug\Compiler.exe
+C:\Users\Andriyan\Desktop\Compiler FINAL\Compiler\Compiler\obj\Debug\Compiler.pdb
+C:\Users\Andriyan\Desktop\Compiler FINAL\Compiler\Compiler\bin\Debug\Compiler.exe
+C:\Users\Andriyan\Desktop\Compiler FINAL\Compiler\Compiler\bin\Debug\Compiler.pdb
+C:\Users\Andriyan\Desktop\Compiler FINAL\Compiler\Compiler\obj\Debug\Compiler.csprojResolveAssemblyReference.cache

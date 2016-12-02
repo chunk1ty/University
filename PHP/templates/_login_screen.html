@@ -1,0 +1,22 @@
+<br>
+<center>
+<p><b>Login</b></p>
+<p><font color="red"><?php print $errorMsg; ?></font></p>
+<form action="index.php" method="post">
+<input type="hidden" name="cmd" value="user_login">
+<table width="500" cellspacing="3">
+<tr>
+	<td align="right">Username :</td>
+	<td><input type="text" name="username" size="20" maxlength="20"></td>
+</tr>
+<tr>
+	<td align="right">Password :</td>
+	<td><input type="password" name="password" size="20"></td>
+</tr>
+
+<tr>
+	<td colspan="2" align="center"><input type="submit" value=" Login "> </td>
+</tr>
+</table>
+</form>
+</center>

@@ -1,0 +1,37 @@
+body{
+	padding:0px;
+	font-family: Verdana,sans-serif;
+	background: #ffffff;
+	color:#505050;
+}
+
+td {
+	font-size:13px;
+	line-height:16px;	
+}
+
+h1{
+	font-size:16px;
+	font-weight:bold;
+	margin:15 0 25 0px;
+	color:#480024;
+}
+h2{
+	font-size:22px;
+	font-weight:bold;
+	color:white;
+}
+
+a.menu:link {font:bold 13px verdana, "arial"; color:white;text-decoration:none;background:url(images/bltm.gif) top left no-repeat;padding:5 10 5 20px;margin-left:10px;}
+a.menu:visited {font:bold 13px verdana, "arial"; color:white;text-decoration:none;background:url(images/bltm.gif) top left no-repeat;padding:5 10 5 20px;margin-left:10px;}
+a.menu:hover {font:bold 13px verdana, "arial"; color:yellow;text-decoration:underline;background:url(images/bltm.gif) top left no-repeat;padding:5 10 5 20px;margin-left:10px;}
+a.menu:visited.hover {font:bold 13px verdana, "arial"; color:yellow;text-decoration:underline;background:url(images/bltm.gif) top left no-repeat;padding:5 10 5 20px;margin-left:10px;}
+
+
+a.inner:link {font: 13px verdana, "arial"; color:navy;text-decoration:none;}
+a.inner:visited {font: 13px verdana, "arial"; color:navy;text-decoration:none;}
+a.inner:hover {font: 13px verdana, "arial"; color:#990000;text-decoration:underline;}
+a.inner:visited.hover {font: 13px verdana, "arial"; color:#990000;text-decoration:underline;}
+
+
+div.center {text-align:center;}

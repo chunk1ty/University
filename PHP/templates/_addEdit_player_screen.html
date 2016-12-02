@@ -1,0 +1,52 @@
+
+<center>
+<p><b>Add / Edit Player</b></p>
+<p><font color="red"><?php print $errorMsg; ?></font></p>
+<form action="index.php" method="post">
+<input type="hidden" name="cmd" value="plr_save">
+<input type="hidden" name="id" value="<?php print $sid; ?>">
+<table width="500" cellspacing="3">
+<tr>
+	<td align="right">ID:</td>
+	<td><input id="ank" type="text" name="data[ID]" value="<?php print $ID; ?>" size="6"></td>
+</tr>
+<script type="text/javascript">
+if (document.forms[0].elements['id'].value != '')
+{
+	document.getElementById("ank").readOnly = true;
+}
+</script>
+<tr>
+	<td align="right">First Name:</td>
+	<td><input type="text" name="data[FirstName]" value="<?php print $FirstName; ?>" size="30"></td>
+</tr>
+<tr>
+	<td align="right">Last Name:</td>
+	<td><input type="text" name="data[LastName]" value="<?php print $LastName; ?>" size="30"></td>
+</tr>
+<tr>
+	<td align="right">Nationality:</td>
+	<td><input type="text" name="data[Nationality]" value="<?php print $Nationality; ?>" size="30"></td>
+</tr>
+<tr>
+	<td align="right">Height:</td>
+	<td><input type="text" name="data[Height]" value="<?php print $Height; ?>" size="6"></td>
+</tr>
+<tr>
+	<td align="right">Weight:</td>
+	<td><input type="text" name="data[Weight]" value="<?php print $Weight; ?>" size="6"></td>
+</tr>
+<tr>
+	<td align="right">Position:</td>
+	<td>
+		<select name="data[PlayerPosition]">
+		<?php print $PlayerPosition; ?>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td colspan="2" align="center"><input type="submit" value=" Save "> &nbsp; <input type="button" value=" Cancel " onClick="javascript:window.location='index.php?cmd=browsePlr'"></td>
+</tr>
+</table>
+</form>
+</center>

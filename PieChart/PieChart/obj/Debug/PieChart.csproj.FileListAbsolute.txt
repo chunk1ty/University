@@ -1,0 +1,20 @@
+C:\Users\Andriyan\Desktop\PieChart\PieChart\bin\Debug\PieChart.exe.config
+C:\Users\Andriyan\Desktop\PieChart\PieChart\bin\Debug\PieChart.exe
+C:\Users\Andriyan\Desktop\PieChart\PieChart\bin\Debug\PieChart.pdb
+C:\Users\Andriyan\Desktop\PieChart\PieChart\obj\Debug\PieChart.csprojResolveAssemblyReference.cache
+C:\Users\Andriyan\Desktop\PieChart\PieChart\obj\Debug\PieChart.Properties.Resources.resources
+C:\Users\Andriyan\Desktop\PieChart\PieChart\obj\Debug\PieChart.csproj.GenerateResource.Cache
+C:\Users\Andriyan\Desktop\PieChart\PieChart\obj\Debug\PieChart.exe
+C:\Users\Andriyan\Desktop\PieChart\PieChart\obj\Debug\PieChart.pdb
+C:\Users\Andriyan\Desktop\PieChart\PieChart\obj\Debug\PieChart.PieChart.resources
+C:\Users\Andriyan\Desktop\PieChart\PieChart\obj\Debug\PieChart.AddPerson.resources
+C:\Users\Krastev_PC\Google Drive\PieChart\PieChart\bin\Debug\PieChart.exe.config
+C:\Users\Krastev_PC\Google Drive\PieChart\PieChart\obj\Debug\PieChart.exe
+C:\Users\Krastev_PC\Google Drive\PieChart\PieChart\obj\Debug\PieChart.pdb
+C:\Users\Krastev_PC\Google Drive\PieChart\PieChart\bin\Debug\PieChart.exe
+C:\Users\Krastev_PC\Google Drive\PieChart\PieChart\bin\Debug\PieChart.pdb
+C:\Users\Krastev_PC\Google Drive\PieChart\PieChart\obj\Debug\PieChart.csprojResolveAssemblyReference.cache
+C:\Users\Krastev_PC\Google Drive\PieChart\PieChart\obj\Debug\PieChart.AddPerson.resources
+C:\Users\Krastev_PC\Google Drive\PieChart\PieChart\obj\Debug\PieChart.PieChart.resources
+C:\Users\Krastev_PC\Google Drive\PieChart\PieChart\obj\Debug\PieChart.Properties.Resources.resources
+C:\Users\Krastev_PC\Google Drive\PieChart\PieChart\obj\Debug\PieChart.csproj.GenerateResource.Cache

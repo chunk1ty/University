@@ -1,0 +1,84 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1251">
+<title>Aston Villa Football Club</title>
+<link rel="stylesheet" type="text/css" href="main.css" media="screen">
+<?=$JavaScript;?>
+</head>
+<body marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+<table cellspacing="0" cellpadding="0" width="100%" height="100%" border="0">
+<tr height="100" bgcolor="#480024">
+	<td width="200"></td>
+	<td align="center"><h2>Aston Villa Football Club</h2></td>
+</tr>
+<tr height="1" bgcolor="white">
+	<td colspan="2"><img src="images/spacer.gif" width="1" height="1"></td>
+</tr>
+<tr height="1" bgcolor="black">
+	<td colspan="2"><img src="images/spacer.gif" width="1" height="1"></td>
+</tr>
+<tr height="1" bgcolor="white">
+	<td colspan="2"><img src="images/spacer.gif" width="1" height="1"></td>
+</tr>
+<?php print $informationRow;?>
+<tr>
+	<td width="200" bgcolor="#480024" valign="top">
+	<!-- Menu -->
+	<br><br>
+	<table width="100%" border="0">		
+		<tr>
+			<td align="left">&nbsp; <font color="white"><b>Coaches</b></font></td>
+		</tr>
+		<tr>
+			<td align="left"><a class="menu" href="index.php?cmd=ch_addScreen">Add</a></td>
+		</tr>
+		<tr>
+			<td align="left"><a class="menu" href="index.php?cmd=ch_browse">View</a></td>
+		</tr>
+		<tr>
+			<td align="left"><a class="menu" href="index.php?cmd=ch_addScreenPlrRating">Add Player Rating</a></td>
+		</tr>
+		<tr>
+			<td align="left"><br></td>
+		</tr>
+		<tr>
+			<td align="left">&nbsp; <font color="white"><b>Players</b></font></td>
+		</tr>
+		<tr>
+			<td align="left"><a class="menu" href="index.php?cmd=plr_addScreen">Add</a></td>
+		</tr>
+		<tr>
+			<td align="left"><a class="menu" href="index.php?cmd=plr_browse">View</a></td>
+		</tr>
+		<tr>
+			<td align="left"><br></td>
+		</tr>
+		<tr>
+			<td align="left">&nbsp; <font color="white"><b>Report</b></font></td>
+		</tr>
+		<tr>
+			<td align="left"><a class="menu" href="index.php?cmd=plr_report">For players</a></td>
+		</tr>
+	</table>
+	<!-- Krai na menuto -->
+	</td>
+	<td valign="top">
+	<!-- Dinamichna oblast -->
+	<?php print $content; ?>
+	<!-- Krai na dinamichnata oblast -->
+	</td>
+</tr>
+<tr height="1" bgcolor="white">
+	<td colspan="2"><img src="images/spacer.gif" width="1" height="1"></td>
+</tr>
+<tr height="1" bgcolor="black">
+	<td colspan="2"><img src="images/spacer.gif" width="1" height="1"></td>
+</tr>
+<tr height="1" bgcolor="white">
+	<td colspan="2"><img src="images/spacer.gif" width="1" height="1"></td>
+</tr>
+<tr height="20" bgcolor="#480024">
+	<td colspan="2" align="center"></td>
+</tr>
+</body>
+</html>

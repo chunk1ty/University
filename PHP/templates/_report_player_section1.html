@@ -1,0 +1,23 @@
+
+<center>
+<p><b>Information about player</b></p>
+
+<form action="index.php" method="get">
+<input type="hidden" name="cmd" value="plr_report">
+<table>
+<tr>
+	<td>ID: </td>
+	<td><input type="text" size="6" name="ID" value="<?php print $ID;?>" style="border: 1px solid black; padding:2px;"></td>
+</tr>
+<tr>
+	<td colspan="2" align="center"><input type="submit" value=" Search "></td>
+</tr>
+</table>
+</form>
+
+<br>
+<?php print $section_2; ?>
+<br>
+<br>
+<?php print $section_3; ?>
+</center>

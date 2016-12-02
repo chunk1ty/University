@@ -1,0 +1,9 @@
+<tr bgcolor="<?php print $bgColor;?>">
+	<td width="300">&nbsp;<b><?php print $ID;?></b></td>
+	<td width="350">&nbsp;<b><?php print $FirstName;?></b></td>
+	<td width="350">&nbsp;<b><?php print $LastName;?></b></td>
+	<td width="350">&nbsp;<b><?php print $Nationality;?></b></td>
+	<td width="400">&nbsp;<b><?php print $Height;?></b></td>
+	<td width="350">&nbsp;<b><?php print $Weight;?></b></td>
+	<td><a class="inner" href="index.php?cmd=plr_editScreen&ID=<?php print $ID;?>">Edit</a>  <a class="inner" href="javascript:delPlayer(<?php print $ID;?>);">Delete</a> <a class="inner" href="index.php?cmd=plr_report&ID=<?php print $ID;?>">Details</a></td>
+</tr>

@@ -1,0 +1,54 @@
+
+<center>
+<p><b>Add / Edit Player Rating</b></p>
+<p><font color="red"><?php print $errorMsg; ?></font></p>
+<form action="index.php" method="post">
+<input type="hidden" name="cmd" value="ch_save">
+<input type="hidden" name="id" value="<?php print $sid; ?>">
+<table width="500" cellspacing="3">
+<!--
+<tr>
+	<td align="right">ID:</td>
+	<td><input id="ank" type="text" name="data[ID]" value="<?php print $ID; ?>" size="6"></td>
+</tr>
+<script type="text/javascript">
+if (document.forms[0].elements['id'].value != '')
+{
+	document.getElementById("ank").readOnly = true;
+}
+</script>
+-->
+<tr>
+	<td align="right">Coach name:</td>
+	<td>
+		<select name="data[CoachID]">
+		<?php print $CoachID; ?>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td align="right">Player Name:</td>
+	<td>
+		<select name="data[PlayerID]">
+		<?php print $PlayerID; ?>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td align="right">Team:</td>
+	<td>
+		<select name="data[TeamId]">
+		<?php print $TeamID; ?>
+		</select>
+	</td>
+</tr>
+<tr>
+	<td align="right">Rating:</td>
+	<td><input type="text" name="data[PlayerRating]" value="<?php print $PlayerRating; ?>" size="5"></td>
+</tr>
+<tr>
+	<td colspan="2" align="center"><input type="submit" value=" Save "> &nbsp; <input type="button" value=" Cancel " onClick="javascript:window.location='index.php?cmd=browseCh'"></td>
+</tr>
+</table>
+</form>
+</center>
