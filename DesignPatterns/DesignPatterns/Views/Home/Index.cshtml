@@ -1,0 +1,55 @@
+﻿@model DesignPatterns.Models.FactureViewModel
+<h1 class="text-center">
+    ФАКТУРИ
+</h1>
+
+<hr />
+
+<div class="form-group text-center">
+    <div id="create-btn" class="btn btn-lg btn-success" style="margin-right: 100px;">
+        Създай
+    </div>
+    <div id="preview-btn" class="btn btn-lg btn-default" >
+        Преглед
+    </div>
+</div>
+
+<div id="main-content">
+    <h2 class="text-center">
+        Избери опция
+    </h2>
+</div>
+
+<hr />
+
+@section Scripts{
+<script>
+    $("#create-btn").on("click", function () {
+        $.ajax({
+            type: 'GET',
+            url: '@Url.Action("Distributor", "Home")',
+            data: {status: 1},
+            success: function (result) {
+                $("#main-content").html(result);
+            },
+            error: function (ex) {
+                alert(ex);
+            }
+        });
+    });
+
+    $("#preview-btn").on("click", function () {
+        $.ajax({
+            type: 'GET',
+            url: '@Url.Action("Distributor", "Home")',
+            data: {status: 2},
+            success: function (result) {
+                $("#main-content").html(result);
+            },
+            error: function (ex) {
+                alert(ex);
+            }
+        });
+    });
+</script>    
+}
