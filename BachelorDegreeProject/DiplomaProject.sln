@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{A21E8B69-8316-4B61-BC85-18797205B90E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C4B55F2F-3642-49B7-9C35-14AE80F627E7}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ankk.Web", "Ankk.Web\Ankk.Web.csproj", "{B49B6CF7-088C-4D75-81B7-156C6F029685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ankk.Web.Tests", "Ankk.Web.Tests\Ankk.Web.Tests.csproj", "{6585915C-D5DB-4BFE-BA39-DF3FD1DA084B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{25856FC8-4843-4ACA-A8BD-4E445BFC8C6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ankk.Data", "Ankk.Data\Ankk.Data.csproj", "{E840411D-9ECC-435F-ACAF-7A128E00ED1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ankk.Models", "Ankk.Models\Ankk.Models.csproj", "{975B2F4D-C20B-4A1B-A1B3-F4335D9B46AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B49B6CF7-088C-4D75-81B7-156C6F029685}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49B6CF7-088C-4D75-81B7-156C6F029685}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49B6CF7-088C-4D75-81B7-156C6F029685}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49B6CF7-088C-4D75-81B7-156C6F029685}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6585915C-D5DB-4BFE-BA39-DF3FD1DA084B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6585915C-D5DB-4BFE-BA39-DF3FD1DA084B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6585915C-D5DB-4BFE-BA39-DF3FD1DA084B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6585915C-D5DB-4BFE-BA39-DF3FD1DA084B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E840411D-9ECC-435F-ACAF-7A128E00ED1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E840411D-9ECC-435F-ACAF-7A128E00ED1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E840411D-9ECC-435F-ACAF-7A128E00ED1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E840411D-9ECC-435F-ACAF-7A128E00ED1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{975B2F4D-C20B-4A1B-A1B3-F4335D9B46AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{975B2F4D-C20B-4A1B-A1B3-F4335D9B46AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{975B2F4D-C20B-4A1B-A1B3-F4335D9B46AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{975B2F4D-C20B-4A1B-A1B3-F4335D9B46AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B49B6CF7-088C-4D75-81B7-156C6F029685} = {A21E8B69-8316-4B61-BC85-18797205B90E}
+		{6585915C-D5DB-4BFE-BA39-DF3FD1DA084B} = {A21E8B69-8316-4B61-BC85-18797205B90E}
+		{E840411D-9ECC-435F-ACAF-7A128E00ED1E} = {25856FC8-4843-4ACA-A8BD-4E445BFC8C6B}
+		{975B2F4D-C20B-4A1B-A1B3-F4335D9B46AB} = {25856FC8-4843-4ACA-A8BD-4E445BFC8C6B}
+	EndGlobalSection
+EndGlobal

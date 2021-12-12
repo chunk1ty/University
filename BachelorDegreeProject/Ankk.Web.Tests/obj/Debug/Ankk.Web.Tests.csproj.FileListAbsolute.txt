@@ -1,0 +1,207 @@
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.Tests.dll.config
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.Tests.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.Tests.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Owin.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Data.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Models.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Optimization.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Data.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Models.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\obj\Debug\Ankk.Web.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\obj\Debug\Ankk.Web.Tests.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\obj\Debug\Ankk.Web.Tests.pdb
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.Tests.dll.config
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.Tests.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.Tests.pdb
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Helpers.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Mvc.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Razor.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Optimization.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Owin.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Data.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Models.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\EntityFramework.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.pdb
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Helpers.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Mvc.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Razor.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Optimization.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Data.pdb
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Models.pdb
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\EntityFramework.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\obj\Debug\Ankk.Web.Tests.csprojResolveAssemblyReference.cache
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\obj\Debug\Ankk.Web.Tests.dll
+D:\DimplomaProject\DiplomaProject\Ankk.Web.Tests\obj\Debug\Ankk.Web.Tests.pdb
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.Tests.dll.config
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.Tests.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.Tests.pdb
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Owin.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Data.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Models.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.pdb
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Optimization.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Data.pdb
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Models.pdb
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\obj\Debug\Ankk.Web.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\obj\Debug\Ankk.Web.Tests.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\obj\Debug\Ankk.Web.Tests.pdb
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ninject.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\WebActivatorEx.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ninject.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.Tests.dll.config
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.Tests.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.Tests.pdb
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Helpers.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Mvc.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Razor.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Models.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Optimization.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ninject.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Owin.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Data.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\WebActivatorEx.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Web.pdb
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Helpers.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Mvc.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Razor.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Models.pdb
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\System.Web.Optimization.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ninject.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ankk.Data.pdb
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\obj\Debug\Ankk.Web.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\obj\Debug\Ankk.Web.Tests.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\obj\Debug\Ankk.Web.Tests.pdb
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\AutoMapper.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\AutoMapper.pdb
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\AutoMapper.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ninject.Web.Common.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ninject.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\WebActivatorEx.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\AutoMapper.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ninject.Web.Common.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\Ninject.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\AutoMapper.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Web.Tests\bin\Debug\AutoMapper.xml

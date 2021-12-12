@@ -1,0 +1,14 @@
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\bin\Debug\Ankk.Client.exe.config
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\bin\Debug\Ankk.Client.exe
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\bin\Debug\Ankk.Client.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\bin\Debug\Ankk.Data.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\bin\Debug\Ankk.Models.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\bin\Debug\EntityFramework.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\bin\Debug\Ankk.Data.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\bin\Debug\Ankk.Models.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\bin\Debug\EntityFramework.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\obj\Debug\Ankk.Client.csprojResolveAssemblyReference.cache
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\obj\Debug\Ankk.Client.exe
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Client\obj\Debug\Ankk.Client.pdb

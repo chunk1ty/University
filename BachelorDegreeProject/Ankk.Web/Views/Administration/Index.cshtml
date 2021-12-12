@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Ankk.Web.Models.ContestViewModel>
+@using GridMvc.Html
+
+<h1>Administration area</h1>
+<hr />
+
+@Html.ActionLink("Create contest", "Create", "Administration", new { @class = "btn btn-primary" })
+
+<div>
+    @Html.Grid(Model).Columns(columns =>
+                {
+                    columns.Add(c => c.Id).Titled("Contest ID");
+                    columns.Add(c => c.Name).Titled("Name");
+                    columns.Add(c => c.IsVisible).Titled("Is Visible");
+                    columns.Add()
+                               .Titled("Edit")
+                               .Sanitized(false)
+                               .Encoded(false)
+                               .RenderValueAs(c => Html.ActionLink("Edit", "Edit", "Administration", new { Id = c.Id }, new { @class = "btn btn-primary" }));
+
+                    columns.Add()
+                                  .Titled("Delete")
+                                  .Sanitized(false)
+                                  .Encoded(false)
+                                  .RenderValueAs(c => Html.ActionLink("Delete", "Delete", "Administration", new { Id = c.Id }, new { @class = "btn btn-primary", onclick = "return confirm('Are you sure you wish to delete this contest?');"}));
+
+                    columns.Add()
+                                  .Titled("Add task")
+                                  .Sanitized(false)
+                                  .Encoded(false)
+                                  .RenderValueAs(c => Html.ActionLink("Add", "Add", "Question", new { Id = c.Id }, new { @class = "btn btn-primary" }));
+
+                    columns.Add()
+                                  .Titled("View Results")
+                                  .Sanitized(false)
+                                  .Encoded(false)
+                                  .RenderValueAs(c => Html.ActionLink("View", "View", "Administration", new { Id = c.Id }, new { @class = "btn btn-primary" }));
+                })
+</div>

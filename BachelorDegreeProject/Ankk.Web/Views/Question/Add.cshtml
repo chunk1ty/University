@@ -1,0 +1,87 @@
+﻿@model Ankk.Web.Models.QuestionViewModel
+
+<h2>Add task</h2>
+
+<hr />
+
+<div id="create-form" class="container">
+    @using (Html.BeginForm("Add", "Question", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary("", new { @class = "text-danger" })
+
+        <div class="row">
+            <div class="editor-label col-xs-3">
+                <div class="pull-right">
+                    @Html.LabelFor(m => m.Name)
+                </div>
+            </div>
+            <div class="editor-field col-xs-4">
+                @Html.EditorFor(m => m.Name, new { @class = "form-control pull-left full-editor" })
+            </div>
+            <div class="editor-field col-xs-4">
+                <span class="glyphicon glyphicon-question-sign text-primary" title="Name of the task" data-tooltip="true"></span>               
+            </div>
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="editor-label col-xs-3">
+                <div class="pull-right">
+                    Description
+                </div>
+            </div>
+            <div class="editor-field col-xs-4">
+                <input type="file" id="description" required="required" name="description">
+            </div>
+            <div class="editor-field col-xs-4">
+                <span class="glyphicon glyphicon-question-sign text-primary" title="Description for the current task" data-tooltip="true"></span>                
+            </div>
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="editor-label col-xs-3">
+                <div class="pull-right">
+                    Input
+                </div>
+            </div>
+            <div class="editor-field col-xs-4">
+                <input type="file"  multiple id="input" required="required" name="input">
+            </div>
+            <div class="editor-field col-xs-4">
+                <span class="glyphicon glyphicon-question-sign text-primary" title="Upload 10 tests" data-tooltip="true"></span>                
+            </div>
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="editor-label col-xs-3">
+                <div class="pull-right">
+                    Output
+                </div>
+            </div>
+            <div class="editor-field col-xs-4">
+                <input type="file" multiple id="output" required="required" name="output">
+            </div>
+            <div class="editor-field col-xs-4">
+                <span class="glyphicon glyphicon-question-sign text-primary" title="The answers of the input(must be 10 test)" data-tooltip="true"></span>
+            </div>
+        </div>
+        <br />
+
+        <div class="row">
+            <div class="editor-label col-xs-3">
+                <div class="pull-right"></div>
+            </div>
+            <div class="editor-label col-xs-3">
+                <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

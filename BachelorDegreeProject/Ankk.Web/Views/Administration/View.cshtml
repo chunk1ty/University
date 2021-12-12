@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Ankk.Models.User>
+@using GridMvc.Html;
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>Results</h2>
+
+<hr />
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 well-sm"><strong>Faculty number</strong></div>
+        <div class="col-sm-3 well-sm"><strong>E-mail</strong></div>
+        <div class="col-sm-3 well-sm"><strong>Points</strong></div>
+        <div class="col-sm-3 well-sm"><strong>Details</strong></div>
+    </div>
+
+    @foreach (var item in Model)
+    {
+        var userId = item.Id;
+        var points = 0;
+        foreach (var p in item.Answers)
+        {
+            var currentUserId = p.UsersId;
+
+            var viewId = p.Questions.ContestId;
+            
+            if (currentUserId == userId && p.Questions.ContestId == ViewBag.ContestID)
+            {
+                points += p.Points;
+            }
+        }
+        <div class="row">
+            <div class="col-sm-3 well-sm">@item.Fn</div>
+            <div class="col-sm-3 well-sm">@item.Email</div>
+            <div class="col-sm-3 well-sm">@points</div>
+            <div class="col-sm-3 well-sm">@Html.ActionLink("Details", "UserResult", "Administration", new { UserId = item.Id, ContestID = ViewBag.ContestID }, new { @class = "btn btn-primary" })</div>
+        </div>
+
+    }
+</div>

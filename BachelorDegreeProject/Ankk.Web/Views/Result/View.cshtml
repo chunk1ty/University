@@ -1,0 +1,17 @@
+﻿@model Ankk.Web.Models.AnswerViewModel
+@using GridMvc.Html
+@{
+    ViewBag.Title = "View";
+}
+
+<h2>My solution</h2>
+
+<hr />
+
+@Html.ActionLink("Back to other task", "Task/" + Model.Questions.ContestId,"Student", null , new { @class = "btn btn-primary" })
+<br />
+<br />
+
+<p>My points are: <span>@Model.Points</span> / 100</p>
+<br />
+@Html.Raw("<pre>" + Html.Encode(Model.SourceCode) + "</pre>")

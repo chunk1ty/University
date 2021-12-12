@@ -1,0 +1,42 @@
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Ankk.Models.dll.config
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Ankk.Models.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Ankk.Models.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\bin\Debug\EntityFramework.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\bin\Debug\EntityFramework.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\obj\Debug\Ankk.Models.csprojResolveAssemblyReference.cache
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\obj\Debug\Ankk.Models.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\obj\Debug\Ankk.Models.pdb
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\bin\Debug\Ankk.Models.dll.config
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\bin\Debug\Ankk.Models.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\bin\Debug\Ankk.Models.pdb
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\bin\Debug\EntityFramework.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\bin\Debug\EntityFramework.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\obj\Debug\Ankk.Models.csprojResolveAssemblyReference.cache
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\obj\Debug\Ankk.Models.dll
+C:\Users\Andriyan\Desktop\ankkkkk\DimplomaProject\DiplomaProject\Ankk.Models\obj\Debug\Ankk.Models.pdb
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Ankk.Models.dll.config
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Ankk.Models.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Ankk.Models.pdb
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\bin\Debug\EntityFramework.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\bin\Debug\EntityFramework.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\obj\Debug\Ankk.Models.csprojResolveAssemblyReference.cache
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\obj\Debug\Ankk.Models.dll
+C:\Users\Andriyan\Desktop\DiplomaProject\Ankk.Models\obj\Debug\Ankk.Models.pdb
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Andriyan Krastev\Desktop\DiplomaProject\Ankk.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

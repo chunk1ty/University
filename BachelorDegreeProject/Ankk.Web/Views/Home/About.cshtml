@@ -1,0 +1,13 @@
+﻿@using System.Collections.Generic;
+@using Ankk.Web.Models;
+@using Ankk.Models;
+@model IEnumerable<Contest>
+
+@foreach (Contest item in Model)
+{
+    if (item.IsVisible)
+    {
+        @item.Name
+        <br />
+    }
+}

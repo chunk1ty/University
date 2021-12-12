@@ -1,0 +1,59 @@
+﻿@model Ankk.Web.Models.AnswerViewModel
+@{
+    ViewBag.Title = "Solve";
+}
+
+<h2>Upload your solution</h2>
+
+<hr />
+
+@using (Html.BeginForm("Solve", "Student", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    //@Html.HiddenFor(model => model.Id)
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+    <div class="row">
+        <div class="editor-label col-xs-3">
+            <div class="pull-right">
+                @Html.LabelFor(m => m.SourceCode)
+            </div>
+        </div>
+        <div class="editor-field col-xs-4">
+            @Html.TextAreaFor(m => m.SourceCode, new { @class = "form-control pull-left full-editor" })
+        </div>
+        <div class="editor-field col-xs-4">
+            <span class="glyphicon glyphicon-question-sign text-primary" title="Put your code here" data-tooltip="true"></span>
+        </div>
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="editor-label col-xs-3">
+            <div class="pull-right">
+                Upload file
+            </div>
+        </div>
+        <div class="editor-field col-xs-4">
+            <input type="file" id="inputFile" required="required" name="file">
+        </div>
+        <div class="editor-field col-xs-4">
+            <span class="glyphicon glyphicon-question-sign text-primary" title="Upload your .exe file" data-tooltip="true"></span>
+        </div>
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="editor-label col-xs-3">
+            <div class="pull-right">
+
+            </div>
+        </div>
+        <div class="editor-field col-xs-4">
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </div>
+
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

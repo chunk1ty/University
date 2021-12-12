@@ -1,0 +1,63 @@
+﻿@model IList<Ankk.Web.Models.QuestionViewModel>
+
+@using GridMvc.Html
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Tasks</h2>
+
+<hr />
+
+@*<div>
+    @Html.Grid(Model).Columns(columns =>
+        {
+            columns.Add(c => c.Name).Titled("Name");
+            columns.Add()
+                        .Titled("Solution")
+                        .Sanitized(false)
+                        .Encoded(false)
+                        .RenderValueAs(c => Html.ActionLink("Solve", "Solve", "Student", new { Id = c.Id }, new { @class = "btn btn-primary" }));
+            columns.Add()
+                         .Titled("Result")
+                         .Sanitized(false)
+                         .Encoded(false)
+                         .RenderValueAs(c => Html.ActionLink("View", "View", "Result", new { Id = c.Id }, new { @class = "btn btn-primary" }));
+        })
+</div>
+
+@{
+    for (int i = 0; i < ViewBag.Files.Count; i++)
+    {
+        @Html.ActionLink(string.Format("Task {0}", i + 1), "Download", new { FileName = ViewBag.Files[i].ToString(), FilePath = ViewBag.Paths[i] });
+    }
+}*@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 well-sm"><strong>Name</strong></div>
+        <div class="col-sm-3 well-sm"><strong>Task</strong></div>
+        <div class="col-sm-3 well-sm"><strong>Solution</strong></div>
+        <div class="col-sm-3 well-sm"><strong>Results</strong></div>
+    </div>
+
+    @for (int i = 0; i < ViewBag.Files.Count; i++)
+    {
+        <div class="row">
+            <div class="col-sm-3 well-sm">
+                @Model[i].Name
+            </div>
+            <div class="col-sm-3 well-sm">
+                @Html.ActionLink(string.Format("Task {0}", i + 1), "Download", new { FileName = ViewBag.Files[i].ToString(), FilePath = ViewBag.Paths[i] })
+            </div>
+            <div class="col-sm-3 well-sm">
+                @Html.ActionLink("Solve", "Solve", "Student", new { Id = Model[i].Id }, new { @class = "btn btn-primary" })
+            </div>
+            <div class="col-sm-3 well-sm">
+                @Html.ActionLink("View", "View", "Result", new { Id = Model[i].Id }, new { @class = "btn btn-primary" })
+            </div>
+        </div>
+
+    }
+</div>

@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Ankk.Web.Models.ContestViewModel>
+@using GridMvc.Html
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Current Exams</h2>
+
+<hr />
+
+<div>
+    @Html.Grid(Model).Columns(columns =>
+                {
+                    columns.Add(c => c.Name).Titled("Name");                   
+                    columns.Add()
+                               .Titled("Status")
+                               .Sanitized(false)
+                               .Encoded(false)
+                               .RenderValueAs(c => Html.ActionLink("Join", "Task", "Student", new { Id = c.Id }, new { @class = "btn btn-primary" }));
+                })
+</div>
