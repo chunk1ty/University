@@ -1,0 +1,29 @@
+﻿@model IList<VoteSystem.Clients.MVC.Areas.Administration.ViewModels.Question.QuestionViewModel>
+
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div class="text-center" style="padding-bottom: 20px;">
+    <h2 class="my-header-title">
+        Преглед на въпросите
+    </h2>
+
+    <a class="btn btn-dark" href="@(Url.Action<VoteSystemController>(c => c.Index()))">
+        <i class="glyphicon glyphicon-arrow-left"></i>
+        Обратно
+    </a>   
+</div>
+
+@for (int i = 0; i < Model.Count; i++)
+{
+    <div class="row">
+        @Html.DisplayFor(m => Model[i])
+
+        @if ((i + 1) < Model.Count)
+        {
+            @Html.DisplayFor(m => Model[i + 1])
+            i += 1;
+        }
+    </div>
+}

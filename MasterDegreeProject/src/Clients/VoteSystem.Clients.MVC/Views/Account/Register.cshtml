@@ -1,0 +1,79 @@
+﻿@model VoteSystem.Clients.MVC.ViewModels.Account.RegisterViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles {
+    @Styles.Render("~/Content/forms-css")
+}
+
+<div id="wrapper">
+    <div class="animate form">
+        <section class="login_content">
+            @using (Html.BeginForm<AccountController>(c => c.Register(), FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <h1>Нов профил</h1>
+
+                <div>
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Имейл." })
+                </div>
+                <div class="error-message">
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control", placeholder = "Име." })
+                </div>
+                <div class="error-message">
+                    @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.LastName, new { @class = "form-control", placeholder = "Фамилия." })
+                </div>
+                <div class="error-message">
+                    @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.FacultyNumber, new { @class = "form-control", placeholder = "Факултетен номер." })
+                </div>
+                <div class="error-message">
+                    @Html.ValidationMessageFor(m => m.FacultyNumber, "", new { @class = "text-danger" })
+                </div>
+
+                <div>
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Парола." })
+                </div>
+                <div class="error-message">
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })                    
+                </div>
+
+                <div>
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", placeholder = "Повтори парола." })
+                </div>
+                <div class="error-message">
+                    @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                </div>
+
+                <div>
+                    <button id="submit-btn" type="submit" class="btn btn-dark" style="width: 100%">
+                        Създай
+                    </button>
+                </div>
+
+                <div class="separator">
+                    <p class="change_link">
+                        @(Html.ActionLink<AccountController>("Вход", c => c.Login(string.Empty)))    
+                        @(Html.ActionLink<HomeController>("Начало", c => c.Index()))
+                    </p>
+                </div>
+            }
+        </section>
+    </div>
+</div>
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}              

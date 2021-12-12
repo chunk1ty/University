@@ -1,0 +1,54 @@
+﻿@model IEnumerable<VoteSystem.Clients.MVC.Areas.Administration.ViewModels.Question.QuestionViewModel>
+
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+@section styles {
+    <style>
+        .validation-summary-errors ul {
+            list-style-type: none;
+        }
+    </style>
+}
+
+@using (Html.BeginForm<QuestionController>(c => c.Edit(Guid.Empty), FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="text-center" style="padding-bottom: 20px;">
+        <h2 class="my-header-title">
+            Промяна на въпросите
+        </h2>
+
+        <a class="btn btn-dark" href="@(Url.Action<VoteSystemController>(c => c.Index()))">
+            <i class="glyphicon glyphicon-arrow-left"></i>
+            Обратно
+        </a>
+        <span id="add-question" class="btn btn-dark">
+            <i class="fa fa-plus"></i>
+            Нов въпрос
+        </span>
+        <button type="submit" class="btn btn-dark">
+            <i class="glyphicon glyphicon-floppy-disk"></i>
+            Запиши
+        </button>
+    </div>
+
+    <div id="question-list">
+        @foreach (var question in Model)
+        {
+            Html.RenderPartial(PartialViewConstants.QuestionPartial, question);
+        }
+    </div>
+}
+
+@*Hacky way to pass parameter in to js function*@
+<div>
+    @Html.Hidden("vote-system-id", (Guid)ViewBag.VoteSystemId)
+</div>
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/questionController")
+}

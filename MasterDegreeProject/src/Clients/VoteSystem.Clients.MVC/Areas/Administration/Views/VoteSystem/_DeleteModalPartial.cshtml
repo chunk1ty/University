@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+
+@Html.AntiForgeryToken()
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm" style="width: 500px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title">Изтриване на система за гласуване</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Сигурни ли сте, че истате да изтриете <span id="modal-content" style="color:red;"></span> система?
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button id="cancel-btn" class="btn btn-dark" type="button" data-dismiss="modal" style="margin: 0;">
+                    Не
+                </button>
+                <button id="delete-vote-system-btn" class="btn btn-danger" type="button">
+                    Да
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

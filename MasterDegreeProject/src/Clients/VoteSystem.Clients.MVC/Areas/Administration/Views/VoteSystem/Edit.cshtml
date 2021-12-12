@@ -1,0 +1,57 @@
+﻿@model VoteSystem.Clients.MVC.Areas.Administration.ViewModels.VoteSystem.VoteSystemViewModel
+
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+@section styles {
+    <style>
+        .daterangepicker th {
+            border-radius: 0;
+        }
+
+         .validation-summary-errors ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+    </style>
+ }
+
+@using (Html.BeginForm<VoteSystemController>(c => c.Edit(Model.Id), FormMethod.Post, null, new { @class = "form-horizontal form-label-left" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.Id)
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <div class="row">
+                        <div class="col-md-5 my-header-title">
+                            Промяна на системата
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-dark" href="@(Url.Action<VoteSystemController>(c => c.Index()))">
+                                <i class="glyphicon glyphicon-arrow-left"></i>
+                                Отказ
+                            </a>
+                            <button class="btn btn-dark" type="submit">
+                                <i class="fa fa-pencil"></i>
+                                Промени
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <br />
+                    @Html.EditorForModel()
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

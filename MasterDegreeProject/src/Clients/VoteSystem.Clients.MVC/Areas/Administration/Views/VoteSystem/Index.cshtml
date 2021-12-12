@@ -1,0 +1,128 @@
+﻿@model IEnumerable<VoteSystem.Clients.MVC.Areas.Administration.ViewModels.VoteSystem.VoteSystemViewModel>
+
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+@section styles {
+    <style>
+        a.paginate_button.current {
+            background-color: rgba(38, 185, 154, 0.59) !important;
+            border-color: rgba(38, 185, 154, 0.59) !important;
+        }
+    </style>
+}
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <div class="col-md-5 my-header-title">
+                    Системи за гласуване
+                </div>
+                <div class="col-md-6">
+                    <a class="btn btn-dark" href="@(Url.Action<VoteSystemController>(c => c.Create(), new { area = "Administration" }))">
+                        <i class="fa fa-plus"></i>
+                        Нова система
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <table id="admin-grid" class="table table-striped jambo_table">
+                    <thead>
+                        <tr>
+                            <th class="col-md-1 col-sm-1 col-xs-1">
+                                Статус
+                            </th>
+                            <th class="col-md-3 col-sm-3 col-xs-3">
+                                Система
+                            </th>
+                            <th class="col-md-3 col-sm-3 col-xs-3">
+                                Промяна
+                            </th>
+                            <th class="col-md-3 col-sm-3 col-xs-3">
+                                Въпроси
+                            </th>
+                            <th class="col-md-2 col-sm-2 col-xs-2">
+                                Учасници
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var voteSystem in Model)
+                        {
+                            <tr>
+                                @Html.Hidden("vote-system-" + voteSystem.Id, voteSystem.Id)
+
+                                @*Status*@
+                                <td class="col-md-1 col-sm-1 col-xs-1">
+                                    @Html.VoteSystemStatus(voteSystem.StarDateTime, voteSystem.EndDateTime)
+                                </td>
+
+                                @*Name*@
+                                <td class="col-md-2 col-sm-2 col-xs-2">
+                                    @voteSystem.Name
+                                </td>
+                                
+                                @*Vote system actions*@
+                                <td class="col-md-3 col-sm-3 col-xs-3">
+                                    <a class="btn btn-dark btn-xs" href="@(Url.Action<VoteSystemController>(c => c.Edit(voteSystem.Id)))">
+                                        <i class="fa fa-pencil"></i>
+                                        Промяна
+                                    </a>
+                                    <button class="delete-btn btn btn-dark btn-xs" type="button" data-toggle="modal" data-target=".bs-example-modal-sm">
+                                        <i class="fa fa-trash-o"></i>
+                                        Изтрий
+                                    </button>
+                                    <a class="btn btn-dark btn-xs" href="@(Url.Action<VoteSystemController>(c => c.Result(voteSystem.Id)))">
+                                        <i class="fa fa-pie-chart"></i>
+                                        Резултати
+                                    </a>
+                                </td>
+
+                                @*Questions*@
+                                <td class="col-md-3 col-sm-3 col-xs-3">
+                                    <a href="@(Url.Action<QuestionController>(c => c.Create(voteSystem.Id)))" class="btn btn-dark btn-xs">
+                                        <i class="fa fa-plus"></i>
+                                        Добави
+                                    </a>
+                                    <a href="@(Url.Action<QuestionController>(c => c.Edit(voteSystem.Id)))" class="btn btn-dark btn-xs">
+                                        <i class="fa fa-pencil"></i>
+                                        Промени
+                                    </a>
+                                    <a href="@(Url.Action<QuestionController>(c => c.Preview(voteSystem.Id)))" class="btn btn-dark btn-xs">
+                                        <i class="fa fa-folder"></i>
+                                        Преглед
+                                    </a>
+                                </td>
+
+                                @*Participants*@
+                                <td class="col-md-3 col-sm-3 col-xs-3">
+                                    <a href="@(Url.Action<ParticipantController>(c => c.Add(voteSystem.Id)))" class="btn btn-dark btn-xs">
+                                        <i class="fa fa-plus"></i>
+                                        Добави
+                                    </a>
+                                    <a href="@(Url.Action<ParticipantController>(c => c.Remove(voteSystem.Id)))" class="btn btn-dark btn-xs">
+                                        <i class="fa fa-trash-o"></i>
+                                        Премахни
+                                    </a>
+                                    <a href="@(Url.Action<ParticipantController>(c => c.Preview(voteSystem.Id)))" class="btn btn-dark btn-xs">
+                                        <i class="fa fa-folder"></i>
+                                        Преглед
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Partial(PartialViewConstants.DeleteModalPartial)
+
+@section scripts {
+    @Scripts.Render("~/bundles/voteSystemController")
+}

@@ -1,0 +1,61 @@
+﻿@model int
+
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<div class="row">
+    <div class="text-center" style="padding-bottom: 20px;">
+        <h2 class="my-header-title">
+            Резултати
+        </h2>
+
+        <a class="btn btn-dark" href="@(Url.Action<VoteSystemController>(c => c.Index()))">
+            <i class="glyphicon glyphicon-arrow-left"></i>
+            Обратно
+        </a>
+    </div>
+
+    <div id="root"></div>
+    
+    @*Handlebar template*@
+    <script id="question-result-template" type="text/x-handlebars-template">
+        {{#each questions}}
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <h2>{{Name}}</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                        <li>
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="close-link">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    {{#if Type}}
+                    <span>Множествен отговор</span>
+                    {{else}}
+                    <span>Единичен отговор</span>
+                    {{/if}}
+                    <div id="echart-pie-{{@@index}}" style="height: 350px"> </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+</div>
+
+@*Hacky way to pass parameter to js file*@
+@Html.Hidden("vote-system-result-url", Url.Action<VoteSystemController>(c => c.GetVoteSystemResultsById(Model)))
+
+@section scripts {
+    @Scripts.Render("~/bundles/voteSystemResultController")
+}

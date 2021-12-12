@@ -1,0 +1,76 @@
+﻿@model IList<VoteSystem.Clients.MVC.Areas.Administration.ViewModels.Participant.ParticipantViewModel>
+
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+@section styles {
+    <style>
+         a.paginate_button.current {
+            background-color: rgba(38, 185, 154, 0.59) !important;
+            border-color: rgba(38, 185, 154, 0.59) !important;
+        }
+    </style>
+}
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <div class="row">
+                    <div class="col-md-5 my-header-title">
+                        Преглед на учасниците
+                    </div>
+                    <div class="col-md-6">
+                        <a class="btn btn-dark" href="@(Url.Action<VoteSystemController>(c => c.Index()))">
+                            <i class="glyphicon glyphicon-arrow-left"></i>
+                            Обратно
+                        </a>
+                        <a id="sent-email-btn" class="btn btn-dark" href="#">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                            Изпрати имейл
+                        </a>     
+                    </div>
+                </div>                
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <table id="user-preview-grid" class="table table-striped jambo_table">
+                    <thead>
+                    <tr>
+                        <th class="col-md-4 col-sm-4 col-xs-4">
+                            Факултетен номер
+                        </th>
+                        <th class="col-md-4 col-sm-4 col-xs-4">
+                            Име
+                        </th>
+                        <th class="col-md-4 col-sm-4 col-xs-4">
+                            Фамилия
+                        </th>
+                        <th class="col-md-4 col-sm-4 col-xs-4">
+                            Имейл
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        <tr>
+                            @Html.DisplayFor(m => Model[i].VoteSystemUser, "UserViewModel")
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*Hacky way to pass parameter in to js function*@
+<div>
+    @Html.Hidden("vote-system-id", (Guid)ViewBag.VoteSystemId)
+</div>
+
+@section scripts{
+    @Scripts.Render("~/bundles/participantPreviewController")
+}

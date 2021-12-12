@@ -1,0 +1,85 @@
+﻿@model VoteSystem.Clients.MVC.Areas.Administration.ViewModels.Question.QuestionViewModel
+
+@{ 
+    var currentBtnId = Guid.NewGuid();
+    var currentQuestionList = currentBtnId + "-list";
+    var currentQuestionClass = Guid.NewGuid();
+}
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Въпрос</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                    <li>
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="close-link">
+                            <i class="fa fa-close"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <br />
+                <div class="form-horizontal form-label-left">
+                    @using (Html.BeginCollectionItem("Questions"))
+                    {
+                        @Html.HiddenFor(m => m.Id)
+                        @Html.HiddenFor(m => m.VoteSystemId)
+
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Name, new{ @class="control-label col-md-3 col-sm-3 col-xs-12" })
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                @Html.TextBoxFor(m => m.Name, new { @class = "current-question form-control col-md-7 col-xs-12 " + currentQuestionClass, placeholder = "Име на въпроса." })
+                                @Html.ValidationMessageFor(m => m.Name, null, new { @class= "text-danger" })
+                            </div>
+
+                            <div id="@currentBtnId" class="btn btn-dark">Добави нов отговор</div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-3">
+                                @Html.CheckBoxFor(m => m.HasMultipleAnswers)
+                                @Html.LabelFor(m => m.HasMultipleAnswers)
+                            </div>
+                        </div>
+
+                        <div class="@currentQuestionList">
+                            @*use when edit questions*@
+                            @foreach (var item in Model.Answers)
+                            {
+                                Html.RenderPartial(PartialViewConstants.AnswerPartial, item);
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*TODO optimize : only 1 script tag at DOM*@
+<script>
+    $("#@currentBtnId").on('click', function () {
+        // Get question guid name; 47 is position of dot
+        var currentQuestionName = $('.@currentQuestionClass')
+                                                        .attr('name')
+                                                        .substring(0, 47);
+        $.ajax({
+            type: 'GET',
+            url: '@Url.Action("AddNewAnswer", "Answer")',
+            data: { containerPrefix: currentQuestionName },
+            success: function (html) {
+                $('.@currentQuestionList').append(html);
+            },
+            error: function (ex) {
+                alert('Can not add new answer' + ex);
+            }
+        });
+    });
+</script>

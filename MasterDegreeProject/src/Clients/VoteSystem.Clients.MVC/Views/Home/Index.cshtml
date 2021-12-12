@@ -1,0 +1,224 @@
+﻿@model VoteSystem.Clients.MVC.ViewModels.Home.FeedbackViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles {
+    @Styles.Render("~/bundles/introduction-page-css")
+}
+<div id="wrap">
+    <header class="masthead"></header>
+    <div id="nav" class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button id="float-menu-btn" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="nav-main" class="collapse navbar-collapse">
+                <ul id="title-menu-btn" class="nav navbar-nav pull-left">
+                    <li>
+                        <a href="/" style="font-size: 22px;">
+                            Система за гласуване
+                        </a>
+                    </li>
+                </ul>               
+                <ul id="navigation-menu-btn" class="nav navbar-nav pull-right">
+                    <li>
+                        <a href="#features">
+                            Начало
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about-me">
+                            За мен
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact-me">
+                            Контакти
+                        </a>
+                    </li>
+                    <li>
+                        @(Html.ActionLink<AccountController>("Вход", c => c.Login(string.Empty), new { area = string.Empty }, htmlAttributes: new { id = "loginLink" }))
+                    </li>
+                    <li>
+                        @(Html.ActionLink<AccountController>("Регистрация", c => c.Register(), new { area = string.Empty }, htmlAttributes: new { id = "registerLink" }))
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="homepage-hero-module">
+        <div class="video-container">
+            <div class="title-container">
+                <div class="headline">
+                    <h1 class="vote-system-title">
+                        СИСТЕМА ЗА ГЛАСУВАНЕ
+                    </h1>
+                </div>
+            </div>
+            <video autoplay loop class="fillWidth">
+                <source src="~/Content/Videos/stars.webm" type="video/webm" />
+                Вашият броузър е прекалено стар. Моля подноветего.
+            </video>
+            <div class="poster hidden">
+                <img src="~/Content/images/vote3.jpg" />
+            </div>
+        </div>
+    </div>
+
+    <section id="features" style="height: 955px; min-height: 500px;">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel" style="height: 800px; min-height: 500px;">
+                    <div class="x_title">
+                        <h1 class="text-center">
+                            Начало
+                        </h1>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <div class="x_content" style="margin-top: 6%;">
+                            <div class="row about-me-row">
+                                <div class="col-md-5 text-center">
+                                    <img src="~/Content/images/anketa.png" width="350" height="350" />
+                                </div>
+                                <div class="col-md-5 col-md-offset-2 mb-30 about-me-info">
+                                    <p>Каква е целта на приложението?</p>
+                                    <p>
+                                        Целта е попълването на анкетите да става навсякъде по всяко време (дори и от личният ви телефон), а не досадното попълване с лист и химикал.
+                                    </p>                                    
+                                    <p>Как работи?</p>
+                                    <p>
+                                        Преди началото на всяка система (ако сте добавени към нея) ще получите имейл кога започва и кога свършва. Приложението е с интуитивен интерфейс, което прави попълването лесно и приятно.
+                                    </p>                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-me" style="height: 955px; min-height: 500px;">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel" style="height: 800px; min-height: 500px;">
+                    <div class="x_title">
+                        <h1 class="text-center">
+                            За мен
+                        </h1>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content" style="margin-top: 6%;">
+                        <div class="row about-me-row">
+                            <div class="col-md-5 text-center">
+                                <img src="~/Content/images/krastev.png" width="350" height="350" />
+                            </div>
+                            <div class="col-md-5 col-md-offset-2 mb-30 about-me-info">
+                                <p>
+                                    Здравейте.
+                                </p>
+                                <p>
+                                    Аз се казвам Андриян Невелинов Кръстев и съм отговорен за създаването на това приложение.
+                                </p>
+                                <p>
+                                    Използвам най-новите C# и JavaScript технологии като ASP.NET MVC, ASP.NET Web API, Entity Framework, AngularJS, jQuery, Twitter Bootstrap и други.
+                                </p>
+                                <p>
+                                    Студент съм магистратура в Русенски университет "Ангел Кънчев" със специалност Компютърни Системи и Технологии.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-me" style="height: 955px; min-height: 500px;">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel" style="height: 800px; min-height: 500px;">
+                    <div class="x_title">
+                        <h1 class="text-center">
+                            Контакти
+                        </h1>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <div class="row" style="width: 100%; margin: auto;">
+                            <div class="col-md-12 contact-info-title text-center">
+                                Вашето мнение е важно за мен.
+                                <p>
+                                    За препоръки или открити бъгове може да ми пишете.
+                                </p>
+                            </div>
+                            @using (Html.BeginForm<HomeController>(c => c.Index(), FormMethod.Post, null, new { @class = "form-horizontal" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <div class="row" style="width: 50%; margin: auto;">
+                                    <div class="col-md-6">
+                                        <div>
+                                            <div>
+                                                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Име" })
+                                            </div>
+                                            <div class="error-message">
+                                                @Html.ValidationMessageFor(m => m.Name)
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                @Html.TextBoxFor(m => m.Destination, new { @class = "form-control", placeholder = "Имейл" })
+                                            </div>
+                                            <div class="error-message">
+                                                @Html.ValidationMessageFor(m => m.Destination)
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                @Html.TextBoxFor(m => m.Subject, new { @class = "form-control", placeholder = "Тема" })
+                                            </div>
+                                            <div class="error-message">
+                                                @Html.ValidationMessageFor(m => m.Subject)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div>
+                                            @Html.TextAreaFor(m => m.Body, new { @class = "form-control", placeholder = "Съобщение", rows = 5 })
+                                        </div>
+                                        <div class="error-message">
+                                            @Html.ValidationMessageFor(m => m.Body)
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 text-center" style="width: 100%">
+                                        <button type="submit" class="btn btn-dark" style="margin-top: 20px;">
+                                            Изпрати
+                                        </button>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row">
+        <div class="col-md-12 col-xs-12 col-sm-12" style="padding: 0">
+            @Html.Partial(PartialViewConstants.FooterPartial)
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/introduction-page-js")
+}

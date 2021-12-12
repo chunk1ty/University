@@ -1,0 +1,193 @@
+﻿@using Microsoft.AspNet.Identity
+@using VoteSystem.Clients.MVC.Areas.Administration.Controllers
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles {
+    @RenderSection("styles", false)
+
+    <style>
+        body {            
+            background: white;
+        }
+
+        #right-menu {
+            background:#2A3F54;
+        }
+
+        .container.body {
+            background: #F7F7F7;
+        }
+    </style>
+}
+
+<div class="container body">
+    <div class="main_container">
+        <div id="right-menu" class="col-md-3 left_col">
+            <div class="left_col scroll-view">
+                <div class="navbar nav_title" style="border: 0;">
+                    <a href="~/Home/Index" class="site_title">
+                        <span>Система за гласуване</span>
+                    </a>
+                </div>
+                <div class="clearfix"></div>
+                <div class="profile">
+                    <div class="profile_pic">
+                        <img src="~/Content/bootstrap-theme/images/user.png" alt="..." class="img-circle profile_img">
+                    </div>
+                    <div class="profile_info">
+                        <span>Добре дошли,</span>
+                        <h2>@User.Identity.GetUserName()</h2>
+                    </div>
+                </div>
+                <br />
+                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                    <div class="menu_section">
+                        <h3>Генерален</h3>
+                        <ul class="nav side-menu">
+                            <li>
+                                <a>
+                                    <i class="fa fa-home"></i>
+                                    Начало
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu" style="display: none">
+                                    <li>
+                                        @(Html.ActionLink<DashboardController>(
+                                                                            "Табло", 
+                                                                            c => c.Index(), 
+                                                                            new { area = string.Empty },
+                                                                            new { title = "Табло" }))
+                                    </li>
+                                </ul>
+                            </li>
+                            @if (User.IsInRole(GlobalConstants.AdministratorRoleName))
+                            {
+                                <li>
+                                    <a>
+                                        <i class="fa fa-edit"></i>
+                                        Админ
+                                        <span class="fa fa-chevron-down"></span>
+                                    </a>
+                                    <ul class="nav child_menu" style="display: none">
+                                        <li>
+                                            @(Html.ActionLink<VoteSystemController>("Табло", c => c.Index(), new { area = "Administration" }, htmlAttributes: new { title = "Табло" }))
+                                        </li>                                       
+                                    </ul>
+                                </li>
+                            }
+                            <li>
+                                <a>
+                                    <i class="fa fa-gear"></i>
+                                    Настройки
+                                    <span class="fa fa-chevron-down"></span>
+                                </a>
+                                <ul class="nav child_menu" style="display: none">
+                                    <li>
+                                        @(Html.ActionLink<AccountController>("Смяна на парола", c => c.ChangePassword(), new { area = string.Empty }, htmlAttributes: new { title = "Смяна на парола" }))
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="top_nav">
+            <div class="nav_menu">
+                <nav class="" role="navigation">
+                    <div class="nav toggle">
+                        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <img src="~/Content/bootstrap-theme/images/user.png" alt="">
+                                @User.Identity.GetUserName()
+                                <span class="fa fa-angle-down"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                                <li>
+                                    @(Html.ActionLink<AccountController>("Профил", c => c.UserProfile(), new { area = string.Empty }, htmlAttributes: new { title = "Профил" }))
+                                </li>
+                                <li>
+                                    @using (Html.BeginForm<AccountController>(c => c.LogOff(), FormMethod.Post, new { area = string.Empty }, new { id = "logoutForm", @class = "navbar-right" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                    }
+                                    <a href="javascript:document.getElementById('logoutForm').submit()">
+                                        <i class="fa fa-sign-out pull-right"></i>
+                                        Изход
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+       
+        <div class="right_col" role="main">
+            @Html.Partial(PartialViewConstants.ErrorNotificationPartial)
+            @Html.Partial(PartialViewConstants.InfoNotificationPartial)
+            @Html.Partial(PartialViewConstants.SuccessNotificationPartial)
+            @Html.Partial(PartialViewConstants.WarningNotificationPartial)
+            @RenderBody()
+        </div>
+    </div>
+
+    <div id="custom_notifications" class="custom-notifications dsp_none" style="display: none">
+        <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group"></ul>
+        <div class="clearfix"></div>
+        <div id="notif-group" class="tabbed_notifications"></div>
+    </div>
+</div>
+
+@Html.Partial(PartialViewConstants.FooterPartial)
+
+@section scripts {
+    @Scripts.Render("~/bundles/gentallela-js")
+    @Scripts.Render("~/bundles/my-scripts")
+    @RenderSection("scripts", false)
+
+    <script>
+        var $getWindowHeight = $(window).height();
+        var $element = $(".container.body");
+        var $lastHeight = $(".container.body").height();
+
+        $(document).ready(function () {
+            $('.right_col').height($getWindowHeight - 113);
+            $('#right-menu').height($getWindowHeight);
+        });
+
+        $(window).resize(function () {
+            $('.right_col').height($(window).height() - 113);
+            $('#right-menu').height($(window).height());           
+        });
+        
+        // TODO think better way to handle rigth menu background color issue
+        $('#menu_toggle').on('click', function () {
+            if ($lastHeight > $getWindowHeight) {
+                $('#right-menu').height($lastHeight);
+            } else {
+                $('#right-menu').height($getWindowHeight);
+            }
+        });
+
+        // TODO think better way to handle rigth menu background color issue
+        setInterval(function () {            
+            if ($element.height() !== $lastHeight) {
+                $lastHeight = $element.height();
+                if ($lastHeight > $getWindowHeight) {
+                    $('#right-menu').height($lastHeight);
+                } else {
+                    $('#right-menu').height($getWindowHeight);
+                }
+            }
+        }, 400);
+    </script>
+}

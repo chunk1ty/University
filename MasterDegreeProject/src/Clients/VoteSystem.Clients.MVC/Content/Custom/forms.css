@@ -1,0 +1,21 @@
+﻿body {
+    background: #F7F7F7;
+}
+
+input {
+    margin-bottom: 10px !important;
+}
+
+.error-message {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+    .error-message span.text-danger {
+        padding-left: 0 !important;
+    }
+
+    .error-message ul {
+        list-style-type: none;
+        padding-left: 0;
+    }

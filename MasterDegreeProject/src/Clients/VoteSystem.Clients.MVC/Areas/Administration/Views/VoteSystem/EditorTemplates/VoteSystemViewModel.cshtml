@@ -1,0 +1,35 @@
+﻿@model VoteSystem.Clients.MVC.Areas.Administration.ViewModels.VoteSystem.VoteSystemViewModel
+
+<div class="form-group">
+    <div class="col-md-7 col-xs-12 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+        @Html.ValidationSummary(true, null, new {@class = "text-danger" })
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(m => m.Name, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(m => m.Name, new { @class = "form-control col-md-7 col-xs-12" })
+        @Html.ValidationMessageFor(m => m.Name, null, new {@class = "text-danger" })
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(m => m.StarDateTime, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(m => m.StarDateTime, new { id = "start-date", @class = "form-control col-md-7 col-xs-12 has-feedback-left" })
+        @Html.ValidationMessageFor(m => m.StarDateTime, null, new { @class = "text-danger" })
+        <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+        <span class="sr-only">(success)</span>
+    </div>
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(m => m.EndDateTime, new { @class = "control-label col-md-3 col-sm-3 col-xs-12" })
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        @Html.TextBoxFor(m => m.EndDateTime, new { id = "end-date", @class = "form-control col-md-7 col-xs-12 has-feedback-left" })
+        @Html.ValidationMessageFor(m => m.EndDateTime, null, new { @class = "text-danger" })
+        <span class="fa fa-calendar-o form-control-feedback left" aria-hidden="true"></span>
+        <span class="sr-only">(success)</span>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web application for voting" />
+    <meta name="author" content="Andriyan Krastev" />
+    <meta name="keywords" content="vote rate system" />
+    <title>Система за гласуване</title>
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/gentelella-css")
+    @RenderSection("styles", required: false)
+    @*TODO: added here because of problem with edit questionRepository*@
+    @Scripts.Render("~/bundles/jquery")    
+    @Scripts.Render("~/bundles/spiner")
+</head>
+<body class="nav-md">
+    <div id="site-spinner"></div>
+    <script>
+        var opts = {
+            lines: 17,
+            length: 0,
+            width: 5,
+            radius: 25,
+            corners: 1,
+            rotate: 0,
+            color: '#1ABB9C',
+            speed: 1,
+            trail: 80,
+            shadow: true,
+            hwaccel: true,
+            className: 'spinner',
+            zIndex: 2e9,
+            top: '45%',
+            left: '50%'
+        };
+        var target = document.getElementById('site-spinner');
+        var spinner = new Spinner(opts).spin(target);
+    </script>
+
+    <div id="votesystem-content" style="display: none;">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/spinerController")
+    @RenderSection("scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            $('#votesystem-content').show();
+            $('#site-spinner').remove();
+            $('#nav').addClass('affix-top');
+        });
+
+        $(window).resize(function () {
+            $('#votesystem-content').show();
+            $('#site-spinner').remove();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{99FC36D3-D963-4263-BF69-8BD11F801E2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{8103CD5B-2A92-401C-A854-A31E0FD44DE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{A5398FDD-2BE7-452F-9808-E5D3C5B58CC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteSystem.Clients.MVC", "src\Clients\VoteSystem.Clients.MVC\VoteSystem.Clients.MVC.csproj", "{67CC40FF-4933-4F83-810E-357E6BC8B973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteSystem.Services.Web", "src\Services\VoteSystem.Services.Web\VoteSystem.Services.Web.csproj", "{987BB8B6-3320-4A56-BF9F-A2BC56F6D5DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteSystem.Services.Web.Tests", "test\VoteSystem.Services.Web.Tests\VoteSystem.Services.Web.Tests.csproj", "{EBFDB942-73AF-4A97-8909-96308BF54649}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{60BD349B-1F06-46FD-B2A1-7F0367126AF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{DF6EC6DD-0407-4407-AE1A-889FEA57320E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ci-dependencies", "ci-dependencies", "{9CCBA71E-9C76-4F97-B862-BB9BC856F680}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{128B2E29-1B04-4D21-948B-F0125B06B352}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "jenkins-jobs", "jenkins-jobs", "{D9B4F554-9392-4605-A2D1-D8761CB6631C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "automatic-build", "automatic-build", "{6A2DE8D2-B860-4C75-A7DF-9B7FF32E7A74}"
+	ProjectSection(SolutionItems) = preProject
+		ci-dependencies\jenkins-jobs\automatic-build\config.xml = ci-dependencies\jenkins-jobs\automatic-build\config.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIDependencies", "ci-dependencies\CIDependencies\CIDependencies.csproj", "{7230C0D4-D13F-45E4-B667-63D7C0E6AB29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6FBE4E09-A4A8-4779-B8F4-E8A26DFE9BFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteSystem.Common.Constants", "src\Common\VoteSystem.Common.Constants\VoteSystem.Common.Constants.csproj", "{ECFC4270-CADE-42BC-B9C0-8DF660397141}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteSystem.Data.Services", "src\Data\VoteSystem.Data.Services\VoteSystem.Data.Services.csproj", "{B189968E-4F1D-4301-A27E-1A3C3D652B98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteSystem.Data.Services.Contracts", "src\Data\VoteSystem.Data.Services.Contracts\VoteSystem.Data.Services.Contracts.csproj", "{269CC85F-7209-4ED3-BC65-C90804B00B37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteSystem.Data.Contracts", "src\Data\VoteSystem.Data.Contracts\VoteSystem.Data.Contracts.csproj", "{B744653C-A435-4CD2-A648-3467180CF400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VotySystem.Data.DTO", "src\Data\VotySystem.Data.DTO\VotySystem.Data.DTO.csproj", "{E73CB871-87EB-4F75-81BE-121A95F50736}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteSystem.Services.Identity", "src\Services\VoteSystem.Services.Identity\VoteSystem.Services.Identity.csproj", "{6FE16DE7-B267-402D-B7EE-7CF56ED1E72D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteSystem.Data.Ef", "src\Data\VoteSystem.Data.Ef\VoteSystem.Data.Ef.csproj", "{2C5B75F9-E146-447E-BD65-F082611821EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteSystem.Data.Entities", "src\Data\VoteSystem.Data.Entities\VoteSystem.Data.Entities.csproj", "{6904A8C3-01B6-4101-AEAF-29BA1C8ECB3D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "documentation", "documentation", "{DCAF898D-8959-4BF7-9A96-627B917B3208}"
+	ProjectSection(SolutionItems) = preProject
+		documentation\Andriyan_Krastev.pptx = documentation\Andriyan_Krastev.pptx
+		documentation\Andriyan_Krastev_153708-_v1.1.docx = documentation\Andriyan_Krastev_153708-_v1.1.docx
+		documentation\Architecture.vsdx = documentation\Architecture.vsdx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Screenshots", "Screenshots", "{7428B4F1-2F28-4893-B99D-5AB4006A3528}"
+	ProjectSection(SolutionItems) = preProject
+		documentation\Screenshots\1.png = documentation\Screenshots\1.png
+		documentation\Screenshots\2.png = documentation\Screenshots\2.png
+		documentation\Screenshots\3.png = documentation\Screenshots\3.png
+		documentation\Screenshots\4.png = documentation\Screenshots\4.png
+		documentation\Screenshots\5.png = documentation\Screenshots\5.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoteSystem.Clients.MVC.Tests", "test\VoteSystem.Clients.MVC.Tests\VoteSystem.Clients.MVC.Tests.csproj", "{D14B6798-3C1A-4B9F-B9F3-7D277680CF1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67CC40FF-4933-4F83-810E-357E6BC8B973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CC40FF-4933-4F83-810E-357E6BC8B973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CC40FF-4933-4F83-810E-357E6BC8B973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CC40FF-4933-4F83-810E-357E6BC8B973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987BB8B6-3320-4A56-BF9F-A2BC56F6D5DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987BB8B6-3320-4A56-BF9F-A2BC56F6D5DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987BB8B6-3320-4A56-BF9F-A2BC56F6D5DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987BB8B6-3320-4A56-BF9F-A2BC56F6D5DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBFDB942-73AF-4A97-8909-96308BF54649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFDB942-73AF-4A97-8909-96308BF54649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFDB942-73AF-4A97-8909-96308BF54649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFDB942-73AF-4A97-8909-96308BF54649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7230C0D4-D13F-45E4-B667-63D7C0E6AB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7230C0D4-D13F-45E4-B667-63D7C0E6AB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7230C0D4-D13F-45E4-B667-63D7C0E6AB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7230C0D4-D13F-45E4-B667-63D7C0E6AB29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFC4270-CADE-42BC-B9C0-8DF660397141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFC4270-CADE-42BC-B9C0-8DF660397141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFC4270-CADE-42BC-B9C0-8DF660397141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFC4270-CADE-42BC-B9C0-8DF660397141}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B189968E-4F1D-4301-A27E-1A3C3D652B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B189968E-4F1D-4301-A27E-1A3C3D652B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B189968E-4F1D-4301-A27E-1A3C3D652B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B189968E-4F1D-4301-A27E-1A3C3D652B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{269CC85F-7209-4ED3-BC65-C90804B00B37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{269CC85F-7209-4ED3-BC65-C90804B00B37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{269CC85F-7209-4ED3-BC65-C90804B00B37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{269CC85F-7209-4ED3-BC65-C90804B00B37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B744653C-A435-4CD2-A648-3467180CF400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B744653C-A435-4CD2-A648-3467180CF400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B744653C-A435-4CD2-A648-3467180CF400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B744653C-A435-4CD2-A648-3467180CF400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73CB871-87EB-4F75-81BE-121A95F50736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73CB871-87EB-4F75-81BE-121A95F50736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73CB871-87EB-4F75-81BE-121A95F50736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73CB871-87EB-4F75-81BE-121A95F50736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE16DE7-B267-402D-B7EE-7CF56ED1E72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE16DE7-B267-402D-B7EE-7CF56ED1E72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE16DE7-B267-402D-B7EE-7CF56ED1E72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE16DE7-B267-402D-B7EE-7CF56ED1E72D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C5B75F9-E146-447E-BD65-F082611821EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C5B75F9-E146-447E-BD65-F082611821EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C5B75F9-E146-447E-BD65-F082611821EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C5B75F9-E146-447E-BD65-F082611821EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6904A8C3-01B6-4101-AEAF-29BA1C8ECB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6904A8C3-01B6-4101-AEAF-29BA1C8ECB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6904A8C3-01B6-4101-AEAF-29BA1C8ECB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6904A8C3-01B6-4101-AEAF-29BA1C8ECB3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D14B6798-3C1A-4B9F-B9F3-7D277680CF1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D14B6798-3C1A-4B9F-B9F3-7D277680CF1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D14B6798-3C1A-4B9F-B9F3-7D277680CF1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D14B6798-3C1A-4B9F-B9F3-7D277680CF1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99FC36D3-D963-4263-BF69-8BD11F801E2B} = {60BD349B-1F06-46FD-B2A1-7F0367126AF4}
+		{8103CD5B-2A92-401C-A854-A31E0FD44DE6} = {60BD349B-1F06-46FD-B2A1-7F0367126AF4}
+		{A5398FDD-2BE7-452F-9808-E5D3C5B58CC3} = {60BD349B-1F06-46FD-B2A1-7F0367126AF4}
+		{67CC40FF-4933-4F83-810E-357E6BC8B973} = {99FC36D3-D963-4263-BF69-8BD11F801E2B}
+		{987BB8B6-3320-4A56-BF9F-A2BC56F6D5DB} = {A5398FDD-2BE7-452F-9808-E5D3C5B58CC3}
+		{EBFDB942-73AF-4A97-8909-96308BF54649} = {DF6EC6DD-0407-4407-AE1A-889FEA57320E}
+		{D9B4F554-9392-4605-A2D1-D8761CB6631C} = {9CCBA71E-9C76-4F97-B862-BB9BC856F680}
+		{6A2DE8D2-B860-4C75-A7DF-9B7FF32E7A74} = {D9B4F554-9392-4605-A2D1-D8761CB6631C}
+		{7230C0D4-D13F-45E4-B667-63D7C0E6AB29} = {9CCBA71E-9C76-4F97-B862-BB9BC856F680}
+		{6FBE4E09-A4A8-4779-B8F4-E8A26DFE9BFB} = {60BD349B-1F06-46FD-B2A1-7F0367126AF4}
+		{ECFC4270-CADE-42BC-B9C0-8DF660397141} = {6FBE4E09-A4A8-4779-B8F4-E8A26DFE9BFB}
+		{B189968E-4F1D-4301-A27E-1A3C3D652B98} = {8103CD5B-2A92-401C-A854-A31E0FD44DE6}
+		{269CC85F-7209-4ED3-BC65-C90804B00B37} = {8103CD5B-2A92-401C-A854-A31E0FD44DE6}
+		{B744653C-A435-4CD2-A648-3467180CF400} = {8103CD5B-2A92-401C-A854-A31E0FD44DE6}
+		{E73CB871-87EB-4F75-81BE-121A95F50736} = {8103CD5B-2A92-401C-A854-A31E0FD44DE6}
+		{6FE16DE7-B267-402D-B7EE-7CF56ED1E72D} = {A5398FDD-2BE7-452F-9808-E5D3C5B58CC3}
+		{2C5B75F9-E146-447E-BD65-F082611821EB} = {8103CD5B-2A92-401C-A854-A31E0FD44DE6}
+		{6904A8C3-01B6-4101-AEAF-29BA1C8ECB3D} = {8103CD5B-2A92-401C-A854-A31E0FD44DE6}
+		{7428B4F1-2F28-4893-B99D-5AB4006A3528} = {DCAF898D-8959-4BF7-9A96-627B917B3208}
+		{D14B6798-3C1A-4B9F-B9F3-7D277680CF1C} = {DF6EC6DD-0407-4407-AE1A-889FEA57320E}
+	EndGlobalSection
+EndGlobal

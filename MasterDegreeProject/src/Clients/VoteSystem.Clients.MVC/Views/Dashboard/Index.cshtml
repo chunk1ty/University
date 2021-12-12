@@ -1,0 +1,71 @@
+﻿@model IEnumerable<VoteSystem.Clients.MVC.Areas.Administration.ViewModels.VoteSystem.VoteSystemViewModel>
+
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+@section styles { 
+    <style>
+        a.paginate_button.current {
+            background-color: rgba(38, 185, 154, 0.59) !important;
+            border-color: rgba(38, 185, 154, 0.59) !important;
+        }
+    </style>
+}
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>
+                    Активни системи за гласуване
+                </h2>               
+                <div class="clearfix"></div>
+            </div>
+            <div class="x_content">
+                <table id="example" class="table table-striped responsive-utilities jambo_table">
+                    <thead>
+                        <tr>
+                            <th class="col-md-3 col-sm-3 col-xs-3">
+                                Статус
+                            </th>
+                            <th class="col-md-3 col-sm-3 col-xs-3">
+                                Име
+                            </th>
+                            <th class="col-md-3 col-sm-3 col-xs-3">
+                                Действие
+                            </th>
+                            <th class="col-md-3 col-sm-3 col-xs-3">
+                                Оставащо време
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var voteSystem in Model)
+                        {
+                            <tr>
+                                <td class="col-md-3 col-sm-3 col-xs-3">
+                                    <span class="btn btn-success btn-xs">
+                                        Активен
+                                    </span>
+                                </td>
+                                <td class="col-md-3 col-sm-3 col-xs-3">
+                                    @voteSystem.Name
+                                </td>
+                                <td class="col-md-3 col-sm-3 col-xs-3">
+                                    <a href="@(Url.Action<ParticipantFillOutController>( c => c.FillOut(voteSystem.Id)))" class="btn btn-dark btn-xs">
+                                        <i class="fa fa-play"></i>
+                                        Старт
+                                    </a>
+                                </td>
+                                <td class="col-md-3 col-sm-3 col-xs-3">
+                                    @Html.TimeDisplay(voteSystem.EndDateTime)
+                                </td>
+                            </tr>
+                         }
+                    </tbody>
+              </table>
+            </div>
+        </div>
+    </div>
+</div>

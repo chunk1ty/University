@@ -1,0 +1,89 @@
+﻿@model IList<VoteSystem.Clients.MVC.Areas.Administration.ViewModels.Participant.ParticipantViewModel>
+
+@{
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+@section styles {
+    <style>
+        a.paginate_button.current {
+            background-color: rgba(38, 185, 154, 0.59) !important;
+            border-color: rgba(38, 185, 154, 0.59) !important;
+        }
+
+        .validation-summary-errors li {
+            list-style-type: none;
+        }
+    </style>
+}
+
+@using (Html.BeginForm<ParticipantController>(c => c.Remove(Guid.Empty), FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_title">
+                    <div class="col-md-5 my-header-title">
+                        Премахване на учасници
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn btn-dark" href="@(Url.Action<VoteSystemController>(c => c.Index()))">
+                                <i class="glyphicon glyphicon-arrow-left"></i>
+                                Обратно
+                            </a>
+                            <button class="btn btn-dark" type="submit">
+                                <i class="fa fa-trash-o"></i>
+                                Премахни
+                            </button>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        @Html.ValidationSummary(true, null, new { @class = "text-danger" })
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                    <table id="user-grid" class="table table-striped jambo_table">
+                        <thead>
+                            <tr>
+                                <th class="col-md-1 col-sm-1 col-xs-1">
+                                    <input id="select-all-checkbox" type="checkbox" name="select_all" value="1" />
+                                </th>
+                                <th class="col-md-2 col-sm-2 col-xs-2">
+                                    Факултетен номер
+                                </th>
+                                <th class="col-md-3 col-sm-3 col-xs-3">
+                                    Име
+                                </th>
+                                <th class="col-md-3 col-sm-3 col-xs-3">
+                                    Фамилия
+                                </th>
+                                <th class="col-md-3 col-sm-3 col-xs-3">
+                                    Имейл
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (int i = 0; i < Model.Count; i++)
+                            {
+                                <tr>
+                                    @Html.EditorFor(m => Model[i].VoteSystemUser, "UserViewModel")
+                                    <td>
+                                        @Html.HiddenFor(m => Model[i].Id)
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/participantController")
+}

@@ -1,0 +1,60 @@
+﻿@using VoteSystem.Clients.MVC.ViewModels.Account;
+
+@model LoginViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string returnUrl = (string)ViewBag.ReturnUrl;
+}
+
+@section Styles {
+    @Styles.Render("~/Content/forms-css")
+}
+
+<div id="wrapper">
+    <div id="login" class="animate form">
+        @Html.Partial(PartialViewConstants.InfoNotificationPartial)
+        @Html.Partial(PartialViewConstants.WarningNotificationPartial)
+        @Html.Partial(PartialViewConstants.ErrorNotificationPartial)
+        @Html.Partial(PartialViewConstants.SuccessNotificationPartial)
+        <section class="login_content">
+            @using (Html.BeginForm<AccountController>(c => c.Login(returnUrl), FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <h1>Вход</h1>
+
+                <div>
+                    @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Имейл" })
+                </div>
+                <div class="error-message">
+                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                </div>
+                <div>
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Парола" })
+                </div>
+                <div class="error-message">
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                </div>
+                <div>
+                    <button id="submit-btn" type="submit" class="btn btn-dark" style="width: 100%">
+                        Вход
+                    </button>
+                </div>
+
+                <div class="separator">
+                    <p class="change_link">
+                        @(Html.ActionLink<AccountController>("Регистрация", c => c.Register()))
+                        @(Html.ActionLink<AccountController>("Забравена парола?", c => c.ForgotPassword(returnUrl)))
+                        @(Html.ActionLink<HomeController>("Начало", c => c.Index()))
+                    </p>
+                </div>
+            }
+        </section>
+    </div>
+</div>
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

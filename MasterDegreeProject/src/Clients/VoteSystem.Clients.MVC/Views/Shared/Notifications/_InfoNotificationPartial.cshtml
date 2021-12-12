@@ -1,0 +1,28 @@
+﻿@using VoteSystem.Clients.MVC.Infrastructure.NotificationSystem
+@{
+    var infoList = Html.GetNotifications(NotificationType.Info);
+}
+
+@if (infoList != null)
+{
+    <div class="alert alert-info alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+            &times;
+        </button>
+        @if (infoList.Count() > 1)
+        {
+            <ul>
+                @foreach (String message in infoList)
+                {
+                    <li>
+                        @Html.Raw(message)
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            @Html.Raw(infoList.First())
+        }
+    </div>
+}
